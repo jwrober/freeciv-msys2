@@ -56,7 +56,8 @@ To compile you need to enter a specific directory in the source tree.
 
 Once there you can compile any client you like. For example to compile the Qt client, use this command
 
-    make EXTRA_CONFIG='--build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --enable-freeciv-manual=html --enable-debug=yes' \
+    make EXTRA_CONFIG='--build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 \
+    --target=x86_64-w64-mingw32 --enable-freeciv-manual=html --enable-debug=yes' \
     CFLAGS='-O2' CXXFLAGS='-O2' INSTSUB='usr' qt-installer
 
 The other clients can be installed by changing the last parameter away from `qt-installer` to one of the following:
@@ -68,4 +69,5 @@ The other clients can be installed by changing the last parameter away from `qt-
 
 If you would like to compile the ruleset editor, use this command
 
-    make EXTRA_CONFIG='--build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32' CFLAGS='-O2' CXXFLAGS='-O2' ruledit-installer
+    make EXTRA_CONFIG='--build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 \
+    --target=x86_64-w64-mingw32' CFLAGS='-O2' CXXFLAGS='-O2' ruledit-installer
