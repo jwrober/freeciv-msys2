@@ -60,7 +60,7 @@ Once there you can compile any client you like. For example to compile the Qt cl
     --target=x86_64-w64-mingw32 --enable-freeciv-manual=html --enable-debug=yes' \
     CFLAGS='-O2' CXXFLAGS='-O2' INSTSUB='usr' qt-installer
 
-The other clients can be installed by changing the last parameter away from `qt-installer` to one of the following:
+The other clients can be compiled by changing the last parameter away from `qt-installer` to one of the following:
 * `all` -- NOTE: `all` does not do all the clients. I only does the `sdl2-installer`, `ruledit-installer`, `qt-installer`, and `gtk3.22-installer`
 * `gtk2-installer`
 * `gtk3-installer`
