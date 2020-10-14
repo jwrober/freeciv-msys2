@@ -11,7 +11,6 @@ echo "#####"
 pacman -Su --noconfirm \
     make \
     cmake \
-#    gettext \
     pkg-config \
     tar \
     git \
