@@ -4,6 +4,8 @@ Scripts and documentation to setup and manage an MSYS2 environment on Windows fo
 ![GPLv3 Logo](https://www.gnu.org/graphics/gplv3-127x51.png)<br />
 This work is licensed under the GNU GENERAL PUBLIC LICENSE v3. Same as [freeciv](https://github.com/freeciv/freeciv "freeciv GitHub Repo").
 
+# Introduction
+
 The Open Source empire building game [freeciv](http://www.freeciv.org/) is generally meant to compile in a unix-like environment, such as Linux. However, the maintainers of the code do support Windows builds. Typically players of the game will download precompiled install files directly from the freeciv.org website.
 
 But, what if you want to contribute to freeciv on Windows instead of Linux?  You need a development environment to do that and this github repository is all about getting you up and running.
