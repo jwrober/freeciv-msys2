@@ -6,7 +6,7 @@ cd ~
 mkdir freeciv
 cd freeciv
 git clone https://github.com/freeciv/freeciv.git git
-### Uncomment master and S3_0 if you want to work on those brances
+### Uncomment master and S3_0 if you want to work on those branches
 #mkdir master
 #mkdir S3_0
 mkdir S2_6
