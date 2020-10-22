@@ -100,7 +100,6 @@ echo "#####"
 echo "" >> ~/.bash_profile
 echo 'PATH=/mingw64/bin:${PATH}' >> ~/.bash_profile
 echo 'PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/mingw64/lib/pkgconfig:/mingw64/share/pkgconfig' >> ~/.bash_profile
-#echo "CONFIG_SITE=/mingw64/etc/config.site" >> ~/.bash_profile
 echo "MSYSTEM=MINGW64" >> ~/.bash_profile
 
 echo "#####"
