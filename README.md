@@ -11,7 +11,7 @@ The Open Source empire building game [freeciv](http://www.freeciv.org/) is gener
 But, what if you want to contribute to freeciv on Windows instead of Linux?  You need a development environment to do that and this github repository is all about getting you up and running.
 
 # Download MSYS
-You start by downloading a copy of the MSYS2 environment from Sourceforge - https://sourceforge.net/projects/msys2/files/Base/x86_64/ - these instructions were written by using the `msys2-x86_64-202001109.exe` file.
+You start by downloading a copy of the MSYS2 environment from Sourceforge - https://sourceforge.net/projects/msys2/files/Base/x86_64/ - these instructions were written by using the `msys2-x86_64-20210105.exe` file.
 
 Once downloaded, run the `EXE` and install to the `C:\Tools` folder as `C:\Tools\msys64`. (hint: The author does not like installing things to the root of his C:\).
 
@@ -70,4 +70,8 @@ The other clients can be compiled by changing the last parameter away from `qt-i
 If you would like to compile the ruleset editor, use this command
 
     make EXTRA_CONFIG='--build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 \
-    --target=x86_64-w64-mingw32' CFLAGS='-O2' CXXFLAGS='-O2' ruledit-installer
+    --target=x86_64-w64-mingw32' CFLAGS='-O2' CXXFLAGS='-O2' ruledit-installe
+
+# Compile Freeciv21
+
+Open the `~/freeciv21/INSTALL` file and follow the instructions.
