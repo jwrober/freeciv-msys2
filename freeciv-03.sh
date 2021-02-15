@@ -19,5 +19,10 @@ git worktree add ../S2_6/src S2_6
 cd ~/freeciv/S2_6/src
 ./autogen.sh --no-configure-run
 echo "#####"
+echo "# Setting up freeciv21 dev environment"
+echo "#####"
+cd ~
+git clone https://github.com/longturn/freeciv21.git
+echo "#####"
 echo "# Done"
 echo "#####"
