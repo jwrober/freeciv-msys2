@@ -92,6 +92,10 @@ echo "#####"
 echo "# Installing speex"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-speex
+echo "#####"
+echo " Installing build dependencies for Freeciv21"
+echo "#####"
+pacman -Su --noconfirm mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-libunwind mingw-w64-x86_64-karchive-qt5
 
 echo "#####"
 echo "# Updating ~/.bash_profile"
