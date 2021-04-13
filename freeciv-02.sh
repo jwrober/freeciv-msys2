@@ -9,8 +9,6 @@ echo "#####"
 echo "# Installing base non-arch specific tools"
 echo "#####"
 pacman -Su --noconfirm \
-    make \
-    cmake \
     pkg-config \
     tar \
     git \
