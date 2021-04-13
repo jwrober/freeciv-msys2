@@ -107,6 +107,12 @@ echo 'PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/mingw64/lib/pkgconfig:/mingw64/share/p
 echo "MSYSTEM=MINGW64" >> ~/.bash_profile
 
 echo "#####"
+echo "# Updating MSYS2 base packages"
+echo "#####"
+cd /
+pacman -Syuu --noconfirm
+
+echo "#####"
 echo "# Type \"exit\" to close the MSYS2 shell and reopen for step 3"
 echo "#####"
 
