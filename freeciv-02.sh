@@ -17,7 +17,8 @@ pacman -Su --noconfirm \
     autoconf \
     patch \
     ed \
-    python3
+    python3 \
+    make
 
 echo "#####"
 echo "# Installing mingw x86_64 arch specific tools"
