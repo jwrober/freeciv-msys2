@@ -94,7 +94,8 @@ pacman -Su --noconfirm mingw-w64-x86_64-speex
 echo "#####"
 echo " Installing build dependencies for Freeciv21"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-libunwind mingw-w64-x86_64-karchive-qt5 mingw-w64-x86_64-python-sphinx
+pacman -Su --noconfirm mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-libunwind mingw-w64-x86_64-karchive-qt5 
+pacman -Su --noconfirm mingw-w64-x86_64-python-sphinx mingw-w64-x86_64-python-sphinx_rtd_theme
 
 echo "#####"
 echo "# Updating ~/.bash_profile"
