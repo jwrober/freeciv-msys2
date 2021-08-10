@@ -70,8 +70,8 @@ The other clients can be compiled by changing the last parameter away from `qt-i
 If you would like to compile the ruleset editor, use this command
 
     make EXTRA_CONFIG='--build=x86_64-w64-mingw32 --host=x86_64-w64-mingw32 \
-    --target=x86_64-w64-mingw32' CFLAGS='-O2' CXXFLAGS='-O2' ruledit-installe
+    --target=x86_64-w64-mingw32' CFLAGS='-O2' CXXFLAGS='-O2' ruledit-installer
 
 # Compile Freeciv21
 
-Open the `~/freeciv21/INSTALL` file and follow the instructions.
+Open https://longturn.readthedocs.io/en/latest/General/install.html and follow the instructions.
