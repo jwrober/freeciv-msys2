@@ -88,9 +88,10 @@ echo "# Installing tolua"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-tolua
 echo "#####"
-echo "# Installing speex"
+echo "# Installing speex and portaudio"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-speex
+pacman -Su --noconfirm mingw-w64-i686-portaudio
 echo "#####"
 echo " Installing build dependencies for Freeciv21"
 echo "#####"
