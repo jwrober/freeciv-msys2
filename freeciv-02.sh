@@ -40,9 +40,9 @@ echo "# Installing drmingw"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-drmingw
 echo "#####"
-echo "# Installing gcc"
+echo "# Installing gcc and gdb"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-gcc
+pacman -Su --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb 
 echo "#####"
 echo "# Installing gtk2"
 echo "#####"
