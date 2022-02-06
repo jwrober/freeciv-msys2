@@ -78,7 +78,7 @@ pacman -Su --noconfirm mingw-w64-x86_64-SDL2_gfx
 echo "#####"
 echo "# Installing qt5"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-qt5
+pacman -Su --noconfirm mingw-w64-x86_64-qt5 mingw-w64-x86_64-qt5-svg
 echo "#####"
 echo "# Installing imagemagick"
 echo "#####"
