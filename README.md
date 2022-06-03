@@ -2,7 +2,7 @@
 Scripts and documentation to setup and manage an MSYS2 environment on Windows for freeciv and Freeciv21 development.
 
 ![GPLv3 Logo](https://www.gnu.org/graphics/gplv3-127x51.png)<br />
-This work is licensed under the GNU GENERAL PUBLIC LICENSE v3. Same as [freeciv](https://github.com/freeciv/freeciv "freeciv GitHub Repo") and Same as [freeciv21](https://github.com/longturn/freeciv21 "Freeciv21 GitHub Repo").
+This work is licensed under the GNU GENERAL PUBLIC LICENSE v3. Same as [freeciv](https://github.com/freeciv/freeciv "freeciv GitHub Repo") and  [freeciv21](https://github.com/longturn/freeciv21 "Freeciv21 GitHub Repo").
 
 # Introduction
 
