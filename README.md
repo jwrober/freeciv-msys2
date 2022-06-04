@@ -2,13 +2,13 @@
 Scripts and documentation to setup and manage an MSYS2 environment on Windows for freeciv and Freeciv21 development.
 
 ![GPLv3 Logo](https://www.gnu.org/graphics/gplv3-127x51.png)<br />
-This work is licensed under the GNU GENERAL PUBLIC LICENSE v3. Same as [freeciv](https://github.com/freeciv/freeciv "freeciv GitHub Repo") and  [freeciv21](https://github.com/longturn/freeciv21 "Freeciv21 GitHub Repo").
+This work is licensed under the GNU GENERAL PUBLIC LICENSE v3. Same as [freeciv](https://github.com/freeciv/freeciv "freeciv GitHub Repo") and  [Freeciv21](https://github.com/longturn/freeciv21 "Freeciv21 GitHub Repo").
 
 # Introduction
 
 The Open Source empire building games [freeciv](http://www.freeciv.org/) or [Freeciv21](https://github.com/longturn/freeciv21) are generally meant to compile in a unix-like environment, such as Linux. However, the maintainers of the code do support Windows builds. Typically players of the game will download precompiled install files directly from the freeciv.org or Longturn websites.
 
-But, what if you want to contribute to freeciv(21) on Windows instead of Linux?  You need a development environment to do that and this github repository is all about getting you up and running.
+But, what if you want to contribute to freeciv or Freeciv21 on Windows instead of Linux?  You need a development environment to do that and this github repository is all about getting you up and running.
 
 # Download MSYS
 You start by downloading a copy of the MSYS2 environment from - https://www.msys2.org/ - these instructions were written by using the `msys2-x86_64-20220503.exe` file.
@@ -50,9 +50,13 @@ At this point your MSYS2 evironment should be ready to compile an stock 2.6.x co
 
 # Compile freeciv
 
-To compile you need to enter a specific directory in the source tree.
+To compile you need to enter a specific directory in the source tree. For the 2.6.x branch go to:
 
     cd ~/freeciv/S2_6/src/win32/installer_msys2
+
+For the 3.0.x, 3.1.x and master branches go to:
+
+    cd ~/freeciv/[branch]/src/windows/installer_msys2
 
 Once there you can compile any client you like. For example to compile the Qt client, use this command
 
