@@ -9,7 +9,7 @@ echo "#####"
 echo "# Installing base non-arch specific tools"
 echo "#####"
 pacman -Su --noconfirm \
-    pkg-config \
+    pkgconf \
     tar \
     git \
     automake \
@@ -18,6 +18,7 @@ pacman -Su --noconfirm \
     patch \
     ed \
     python3 \
+    python-pip \
     make
 
 echo "#####"
@@ -34,7 +35,7 @@ pacman -Su --noconfirm mingw-w64-x86_64-make
 echo "#####"
 echo "# Installing python3"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-python3
+pacman -Su --noconfirm mingw-w64-x86_64-python3 mingw-w64-x86_64-python-pip
 echo "#####"
 echo "# Installing drmingw"
 echo "#####"
@@ -44,13 +45,9 @@ echo "# Installing gcc and gdb"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb 
 echo "#####"
-echo "# Installing gtk2"
+echo "# Installing gtk2/3/4"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-gtk2
-echo "#####"
-echo "# Installing gtk3"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-gtk3
+pacman -Su --noconfirm mingw-w64-x86_64-gtk2 mingw-w64-x86_64-gtk3 mingw-w64-x86_64-gtk4
 echo "#####"
 echo "# Installing meson"
 echo "#####"
@@ -64,19 +61,11 @@ echo "# Installing SDL2_mixer"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-SDL2_mixer
 echo "#####"
-echo "# Installing SDL2_image"
+echo "# Installing SDL2_image, SDL2_ttf, and SDL2_gfx"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-SDL2_image
+pacman -Su --noconfirm mingw-w64-x86_64-SDL2_image mingw-w64-x86_64-SDL2_ttf mingw-w64-x86_64-SDL2_gfx
 echo "#####"
-echo "# Installing SDL2_ttf"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-SDL2_ttf
-echo "#####"
-echo "# Installing SDL2_gfx"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-SDL2_gfx
-echo "#####"
-echo "# Installing qt5"
+echo "# Installing Qt5"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-qt5 mingw-w64-x86_64-qt5-svg
 echo "#####"
@@ -84,21 +73,19 @@ echo "# Installing imagemagick"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-imagemagick
 echo "#####"
-echo "# Installing tolua"
+echo "# Installing lua and tolua"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-tolua
 echo "#####"
 echo "# Installing final dependencies"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-speex
-pacman -Su --noconfirm mingw-w64-i686-portaudio
-pacman -Su --noconfirm mingw-w64-x86_64-fluidsynth
-pacman -Su --noconfirm mingw-w64-x86_64-portaudio
+pacman -Su --noconfirm mingw-w64-x86_64-speex mingw-w64-i686-portaudio mingw-w64-x86_64-fluidsynth mingw-w64-x86_64-portaudio
 echo "#####"
 echo " Installing build dependencies for Freeciv21"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-libunwind mingw-w64-x86_64-karchive-qt5 
 pacman -Su --noconfirm mingw-w64-x86_64-python-sphinx
+cd ~
 pip install sphinx-rtd-theme
 
 echo "#####"
