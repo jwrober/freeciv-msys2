@@ -11,7 +11,7 @@ The Open Source empire building games [freeciv](http://www.freeciv.org/) or [Fre
 But, what if you want to contribute to freeciv or Freeciv21 on Windows instead of Linux?  You need a development environment to do that and this github repository is all about getting you up and running.
 
 # Download MSYS
-You start by downloading a copy of the MSYS2 environment from - https://www.msys2.org/ - these instructions were written by using the `msys2-x86_64-20220503.exe` file.
+You start by downloading a copy of the MSYS2 environment from - https://www.msys2.org/ - these instructions were written by using the `msys2-x86_64-20220603.exe` file.
 
 Once downloaded, run the `EXE` and install to the `C:\Tools` folder as `C:\Tools\msys64`. (hint: The author does not like installing things to the root of his C:\).
 
