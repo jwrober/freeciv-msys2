@@ -78,4 +78,4 @@ If you would like to compile the ruleset editor, use this command
 
 # Compile Freeciv21
 
-Open https://longturn.readthedocs.io/en/latest/General/install.html and follow the instructions.
+Open https://longturn.readthedocs.io/en/latest/Getting/compile.html and follow the instructions.
