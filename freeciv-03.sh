@@ -9,11 +9,10 @@ echo "#####"
 echo "# Cloning freeciv repo"
 echo "#####"
 git clone https://github.com/freeciv/freeciv.git git
-### Comment master and S3_0 if you don't want to work on those branches
+### Comment master and S3_1 if you don't want to work on those branches
 mkdir master
 mkdir S3_1
 mkdir S3_0
-mkdir S2_6
 cd git
 git checkout S2_4
 ### Uncomment master and S3_0 worktree lines if you uncommented the same above
@@ -29,15 +28,6 @@ echo "#####"
 echo "# Setting up freeciv 3.0.x branch worktree"
 echo "#####"
 git worktree add ../S3_0/src S3_0
-echo "#####"
-echo "# Setting up freeciv 2.6.x branch worktree"
-echo "#####"
-git worktree add ../S2_6/src S2_6
-echo "#####"
-echo "# Setting up freeciv 2.6.x branch autotools"
-echo "#####"
-cd ~/freeciv/S2_6/src
-./autogen.sh --no-configure-run
 echo "#####"
 echo "# Setting up freeciv 3.0.x branch autotools"
 echo "#####"
@@ -58,7 +48,7 @@ echo "#####"
 echo "# Setting up Freeciv21 dev environment"
 echo "#####"
 cd ~
-git clone https://github.com/longturn/freeciv21.git Freeciv21
+git clone https://github.com/longturn/freeciv21.git freeciv21
 echo "#####"
 echo "# Done"
 echo "#####"
