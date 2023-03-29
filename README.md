@@ -50,10 +50,6 @@ At this point your MSYS2 evironment should be ready to compile an stock 2.6.x co
 
 # Compile freeciv
 
-To compile you need to enter a specific directory in the source tree. For the 2.6.x branch go to:
-
-    cd ~/freeciv/S2_6/src/win32/installer_msys2
-
 For the 3.0.x, 3.1.x and master branches go to:
 
     cd ~/freeciv/[branch]/src/windows/installer_msys2
