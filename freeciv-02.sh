@@ -10,7 +10,6 @@ echo "# Installing base non-arch specific tools"
 echo "#####"
 pacman -Su --noconfirm \
     pkgconf \
-    tar \
     git \
     automake \
     libtool \
@@ -26,16 +25,13 @@ echo "# Installing mingw x86_64 arch specific tools"
 echo "#####"
 echo "#####"
 echo "# Installing gcc and gdb"
+echo "#     Gives: readline, bzip2, and python3
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb 
 echo "#####"
-echo "# Installing curl and bzip2"
+echo "# Installing curl"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-curl mingw-w64-x86_64-bzip2
-echo "#####"
-echo "# Installing readline"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-readline
+pacman -Su --noconfirm mingw-w64-x86_64-curl
 echo "#####"
 echo "# Installing lua and tolua"
 echo "#####"
@@ -57,9 +53,9 @@ echo "# Installing make"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-make
 echo "#####"
-echo "# Installing python3"
+echo "# Installing python3 pip"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-python3 mingw-w64-x86_64-python-pip
+pacman -Su --noconfirm mingw-w64-x86_64-python-pip
 echo "#####"
 echo "# Installing Qt5"
 echo "#####"
