@@ -45,10 +45,6 @@ echo "# Installing gcc and gdb"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb 
 echo "#####"
-echo "# Installing gtk2/3/4"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-gtk2 mingw-w64-x86_64-gtk3 mingw-w64-x86_64-gtk4
-echo "#####"
 echo "# Installing meson"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-meson
