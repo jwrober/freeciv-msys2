@@ -25,9 +25,33 @@ echo "#####"
 echo "# Installing mingw x86_64 arch specific tools"
 echo "#####"
 echo "#####"
-echo "# Installing curl"
+echo "# Installing gcc and gdb"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-curl
+pacman -Su --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb 
+echo "#####"
+echo "# Installing curl and bzip2"
+echo "#####"
+pacman -Su --noconfirm mingw-w64-x86_64-curl mingw-w64-x86_64-bzip2
+echo "#####"
+echo "# Installing readline"
+echo "#####"
+pacman -Su --noconfirm mingw-w64-x86_64-readline
+echo "#####"
+echo "# Installing lua and tolua"
+echo "#####"
+pacman -Su --noconfirm mingw-w64-x86_64-lua mingw-w64-x86_64-tolua
+echo "#####"
+echo "# Installing imagemagick"
+echo "#####"
+pacman -Su --noconfirm mingw-w64-x86_64-imagemagick
+echo "#####"
+echo "# Installing SDL2_mixer"
+echo "#####"
+pacman -Su --noconfirm mingw-w64-x86_64-SDL2_mixer
+echo "#####"
+echo " Installing cmake, ninja, libunwind"
+echo "#####"
+pacman -Su --noconfirm mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-libunwind
 echo "#####"
 echo "# Installing make"
 echo "#####"
@@ -37,49 +61,16 @@ echo "# Installing python3"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-python3 mingw-w64-x86_64-python-pip
 echo "#####"
-echo "# Installing drmingw"
+echo "# Installing Qt5"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-drmingw
-echo "#####"
-echo "# Installing gcc and gdb"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb 
-echo "#####"
-echo "# Installing meson"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-meson
+pacman -Su --noconfirm mingw-w64-x86_64-qt5 mingw-w64-x86_64-qt5-svg mingw-w64-x86_64-karchive-qt5
 echo "#####"
 echo "# Installing nsis"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-nsis
 echo "#####"
-echo "# Installing SDL2_mixer"
+echo "# Installing python spninx and RTD theme"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-SDL2_mixer
-echo "#####"
-echo "# Installing SDL2_image, SDL2_ttf, and SDL2_gfx"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-SDL2_image mingw-w64-x86_64-SDL2_ttf mingw-w64-x86_64-SDL2_gfx
-echo "#####"
-echo "# Installing Qt5"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-qt5 mingw-w64-x86_64-qt5-svg
-echo "#####"
-echo "# Installing imagemagick"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-imagemagick
-echo "#####"
-echo "# Installing lua and tolua"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-tolua
-echo "#####"
-echo "# Installing final dependencies"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-speex mingw-w64-i686-portaudio mingw-w64-x86_64-fluidsynth mingw-w64-x86_64-portaudio
-echo "#####"
-echo " Installing build dependencies for Freeciv21"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja mingw-w64-x86_64-libunwind mingw-w64-x86_64-karchive-qt5 
 pacman -Su --noconfirm mingw-w64-x86_64-python-sphinx
 cd ~
 pip install sphinx-rtd-theme
