@@ -8,4 +8,5 @@ cd freeciv21
 cmake . -B build -G Ninja -DCMAKE_INSTALL_PREFIX=$PWD/build/install
 cmake --build build --target install
 cmake --build build --target package
+pip install -r docs/requirements.txt
 cmake --build build --target docs
