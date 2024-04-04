@@ -18,7 +18,8 @@ pacman -Su --noconfirm \
     ed \
     python3 \
     python-pip \
-    make
+    make \
+    clang
 
 echo "#####"
 echo "# Installing mingw x86_64 arch specific tools"
