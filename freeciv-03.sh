@@ -4,8 +4,8 @@ echo "# Setting up freeciv21 dev environment"
 echo "#####"
 cd ~
 git clone https://github.com/longturn/freeciv21.git freeciv21
-cd ~
 cd freeciv21
-echo "#####"
-echo "# Done"
-echo "#####"
+cmake . -B build -G Ninja -DCMAKE_INSTALL_PREFIX=$PWD/build/install
+cmake --build build --target install
+cmake --build build --target package
+cmake --build build --target docs
