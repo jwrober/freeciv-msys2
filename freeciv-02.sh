@@ -37,10 +37,6 @@ echo "# Installing lua and tolua"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-lua mingw-w64-x86_64-tolua
 echo "#####"
-echo "# Installing imagemagick"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-imagemagick
-echo "#####"
 echo "# Installing SDL2_mixer"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-SDL2_mixer
