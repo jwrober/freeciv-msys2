@@ -65,8 +65,6 @@ echo "#####"
 echo "# Installing python spninx and RTD theme"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-python-sphinx
-cd ~
-pip install sphinx-rtd-theme
 
 echo "#####"
 echo "# Updating ~/.bash_profile"
