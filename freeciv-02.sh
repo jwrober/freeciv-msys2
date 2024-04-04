@@ -26,7 +26,7 @@ echo "# Installing mingw x86_64 arch specific tools"
 echo "#####"
 echo "#####"
 echo "# Installing gcc and gdb"
-echo "#     Gives: readline, bzip2, and python3
+echo "#     Gives: readline, bzip2, and python3"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-gcc mingw-w64-x86_64-gdb 
 echo "#####"
