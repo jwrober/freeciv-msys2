@@ -50,9 +50,9 @@ echo "# Installing make"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-make
 echo "#####"
-echo "# Installing python3 pip"
+echo "# Installing python3 pip and virtual env"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-python-pip
+pacman -Su --noconfirm mingw-w64-x86_64-python-pip mingw-w64-x86_64-python-virtualenv
 echo "#####"
 echo "# Installing Qt5"
 echo "#####"
