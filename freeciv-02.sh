@@ -61,10 +61,6 @@ echo "#####"
 echo "# Installing nsis"
 echo "#####"
 pacman -Su --noconfirm mingw-w64-x86_64-nsis
-echo "#####"
-echo "# Installing python spninx and RTD theme"
-echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-python-sphinx
 
 echo "#####"
 echo "# Updating ~/.bash_profile"
