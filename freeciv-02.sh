@@ -11,7 +11,6 @@ echo "#####"
 pacman -Su --noconfirm \
     git \
     patch \
-    pkgconf \
     python3 \
     unzip \
     zip  
@@ -38,7 +37,7 @@ pacman -Su --noconfirm mingw-w64-clang-x86_64-lua mingw-w64-clang-x86_64-tolua
 echo "#####"
 echo "# Installing SDL2_mixer"
 echo "#####"
-pacman -Su --noconfirm mingw-w64-x86_64-SDL2_mixer
+pacman -Su --noconfirm mingw-w64-clang-x86_64-SDL2_mixer
 echo "#####"
 echo "# Installing Qt6"
 echo "#####"
