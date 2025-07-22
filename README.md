@@ -46,7 +46,7 @@ We set some environment variables at the end of the second script, so we need to
     cd /
     ./freeciv-03.sh
 
-At this point your MSYS2 evironment should be ready to compile an stock 2.6.x copy of freeciv.
+At this point your MSYS2 evironment should be ready to compile an stock 3.x copy of freeciv21.
 
 # Compile Freeciv21
 
